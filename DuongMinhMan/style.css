@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.container {
+    width: 595px;
+    height: 842px;
+    background: white;
+    position: relative;
+}
+.outer-circle {
+    width: 96px;
+    height: 96px;
+    border-radius: 55px;
+    border: 2px solid #33CC66;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+.inner-circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 45px; /* Half of the width and height to create a circle */
+    overflow: hidden; /* Hide any content that exceeds the inner circle */
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.inner-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire inner circle */
+}
